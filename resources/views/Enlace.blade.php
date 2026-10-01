@@ -1,0 +1,2 @@
+<a href="{{route('welcome')}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"> IR A WELCOME</a>
+<a href="#" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
