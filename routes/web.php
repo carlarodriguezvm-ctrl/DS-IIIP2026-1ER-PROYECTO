@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FlightController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,4 +18,7 @@ Route::get('/Enlace', function () {
 Route::get('/Interfaz', function () {
     return view('Interfaz');
 })-> name('Interfaz');
+
+Route::get('/Flights', [FlightController::class, 'index'])->name('Flights.index');
+
 

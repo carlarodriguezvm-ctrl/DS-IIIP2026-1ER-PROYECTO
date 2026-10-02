@@ -32,7 +32,8 @@
                         </a>
                     @else
                         <a
-                            href="{{ route('login') }}"
+                            href="{{route('Interfaz')}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"> IR A INTERFAZ</a>
+
                             class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
                         >
                             Log in
@@ -63,7 +64,7 @@
                             </span>
                             <span>
                                 Read the
-                                <a href="https://laravel.com/docs" target="_blank" class="inline-flex items-center space-x-1 font-medium underline underline-offset-4 text-[#f53003] dark:text-[#FF4433] ml-1">
+                                <a href="{{route('Interfaz')}}" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true"> IR A INTERFAZ</a>
                                     <span>Documentation</span>
                                     <svg
                                         width="10"
@@ -112,8 +113,8 @@
                     </ul>
                     <ul class="flex gap-3 text-sm leading-normal">
                         <li>
-                            <a href="https://cloud.laravel.com" target="_blank" class="inline-block dark:bg-[#eeeeec] dark:border-[#eeeeec] dark:text-[#1C1C1A] dark:hover:bg-white dark:hover:border-white hover:bg-black hover:border-black px-5 py-1.5 bg-[#1b1b18] rounded-sm border border-black text-white text-sm leading-normal">
-                                Deploy now
+                            <a href="{{ route('Interfaz') }}" class="inline-block dark:bg-[#eeeeec] dark:border-[#eeeeec] dark:text-[#1C1C1A] dark:hover:bg-white dark:hover:border-white hover:bg-black hover:border-black px-5 py-1.5 bg-[#1b1b18] rounded-sm border border-black text-white text-sm leading-normal">
+                                INTERFAZ
                             </a>
                         </li>
                     </ul>
