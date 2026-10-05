@@ -2,21 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Flight;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
-class FlightController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //variable to see all the flights
-        $vuelos=Flight::all(); //devuelve los vuelos de la base de datos
-        dd($vuelos); 
-        return view('Flights.index', compact('vuelos')); //devuelve la vista con los vuelos
-        
+        //
     }
 
     /**
@@ -38,7 +34,7 @@ class FlightController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Flight $flight)
+    public function show(Post $post)
     {
         //
     }
@@ -46,7 +42,7 @@ class FlightController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Flight $flight)
+    public function edit(Post $post)
     {
         //
     }
@@ -54,7 +50,7 @@ class FlightController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Flight $flight)
+    public function update(Request $request, Post $post)
     {
         //
     }
@@ -62,7 +58,7 @@ class FlightController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Flight $flight)
+    public function destroy(Post $post)
     {
         //
     }
