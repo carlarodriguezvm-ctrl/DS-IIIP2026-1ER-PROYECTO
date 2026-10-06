@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use app\Models\User;
 use app\Models\Comment;
-
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Post extends Model
 {
     use HasFactory;
     //protected $table = 'postings';
+
     protected $fillable = ['id', 'user_id', 'title', 'body'];
         //insercion masiva a la bd 
 

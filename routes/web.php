@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FlightController;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -21,4 +22,5 @@ Route::get('/Interfaz', function () {
 
 Route::get('/Flights', [FlightController::class, 'index'])->name('Flights.index');
 
+Route::get('/Posts', [PostController::class, 'index'])->name('Posts.index');
 
